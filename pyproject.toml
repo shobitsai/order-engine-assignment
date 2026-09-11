@@ -1,0 +1,14 @@
+[project]
+name = "orderengine"
+version = "0.1.0"
+description = "Order charge & tax engine with exact paisa-level reconciliation, plus a free-text catalog matcher."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
