@@ -1,0 +1,19 @@
+$ python evaluate_matcher.py  
+catalog: 99 entries, eval cases: 52
+
+== default thresholds (score>=0.70, margin>=0.08) ==
+precision 0.974 | coverage 1.000 | false-answer 0.071 | accuracy 0.981 (39/52 answered)
+
+misses and wrong answers:
+  WRONG    'chicken burger': got 'Butter Chicken' (score 0.85, runner-up 0.70), wanted None
+
+== threshold sweep: precision / coverage ==
+threshold | margin 0.00   | margin 0.04   | margin 0.08   | margin 0.12   
+--------------------------------------------------------------------------
+0.60      | 0.83 / 1.00  | 0.93 / 1.00  | 0.93 / 1.00  | 0.93 / 1.00  
+0.65      | 0.86 / 1.00  | 0.97 / 1.00  | 0.97 / 1.00  | 0.97 / 1.00  
+0.70      | 0.90 / 1.00  | 0.97 / 1.00  | 0.97 / 1.00  | 0.97 / 1.00  
+0.72      | 0.90 / 0.97  | 0.97 / 0.97  | 0.97 / 0.97  | 0.97 / 0.97  
+0.75      | 0.95 / 0.97  | 0.97 / 0.97  | 0.97 / 0.97  | 0.97 / 0.97  
+0.80      | 0.95 / 0.92  | 0.97 / 0.92  | 0.97 / 0.92  | 0.97 / 0.92  
+0.85      | 1.00 / 0.79  | 1.00 / 0.79  | 1.00 / 0.79  | 1.00 / 0.79  

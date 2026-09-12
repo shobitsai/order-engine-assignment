@@ -12,7 +12,6 @@ python -m pytest          # runs all 80 tests (Part A + Part B)
 python examples/demo.py   # worked example: mixed inclusive/exclusive order, discounts, charges
 python evaluate_matcher.py               # Part B metrics + threshold sweep
 ```
-
 ### Try it interactively
 
 ```bash
@@ -21,6 +20,11 @@ python order_cli.py       # terminal wizard: build an order step by step
 python order_cli.py --match   # terminal loop for the Part B matcher
 python examples/my_order.py   # editable script template, if you prefer code
 ```
+
+Not running it locally? Captured outputs of all three commands are committed in
+[`results/`](results/): the full 80-test verbose run, the demo's reconciled breakdown,
+and the matcher's metrics with the threshold sweep grid.
+
 
 The UIs are thin shells over the same API (`orderengine/textio.py` holds their shared
 parsing/formatting); all calculation logic lives in the engine and is covered by the tests.

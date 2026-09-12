@@ -1,0 +1,21 @@
+$ python examples/demo.py  
+Chicken Biryani x2
+  gross     598.00   item disc       0.00   order disc      59.80
+  taxable base     512.57   CGST@2.5%: 12.82  SGST@2.5%: 12.81
+  line total     538.20
+Paneer Tikka x1
+  gross     240.00   item disc      40.00   order disc      20.00
+  taxable base     180.00   CGST@2.5%: 4.50  SGST@2.5%: 4.50
+  line total     189.00
+Delivery: base      30.00   CGST@9%: 2.70  SGST@9%: 2.70   total      35.40
+------------------------------------------------------------
+items gross          838.00
+discount total       119.80
+  CGST@2.5%           17.32
+  SGST@2.5%           17.31
+  CGST@9%            2.70
+  SGST@9%            2.70
+charges total         35.40
+GRAND TOTAL          762.60
+
+reconciles: sum(line totals) + charges == 762.60
